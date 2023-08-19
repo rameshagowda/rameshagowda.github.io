@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Cloud Platform Architect focussed on Microsoft Azure, Containers & Kubernetes, data and cloud-native application architecture.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://rameshagowda.github.io"
 
 github:
   username: rameshagowda # change to your github username
