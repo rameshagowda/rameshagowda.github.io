@@ -1,12 +1,12 @@
 ---
-title: Medallion 
+title: Medallion Lakehouse Architecture with Azure databricks, datafactory and DBT
 date: 2023-08-20 12:00 -500
 categories: [Architecture,Azure,Data]
 tags: [medallion, akehouse, azure, dbt, datafactory,databricks, data]
 author: gowda
 ---
 
-This blog outlines important components and steps involved in building a medallion lakehouse architecture on Microsoft Azure.
+<!-- This blog outlines important components and steps involved in building a medallion lakehouse architecture on Microsoft Azure.
 
 ## Components of Medallion lakehouse architecture
 I will introduce and demonstrate how these tools work together with Databricks Medallion architecture.
@@ -32,4 +32,4 @@ It is a big data storage services for big data. 2 things differentiates ADLS gen
 For building the use case, we’ll be using an Azure SQL database that is configured with sample data: AdventureWorks. This database will play the role as source from which we’ll be getting the data. The end goal is to build a simple and user-friendly data model that is ready for consumption.
 
 ## Architecture
-Coming up ...
+Coming up ... -->
