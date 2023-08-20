@@ -32,8 +32,9 @@ It is a data storage services for big data. 2 things differentiates ADLS gen2 fr
 For building the use case, we’ll be using an Azure SQL database that is configured with sample data: AdventureWorks. This database will play the role as source from which we’ll be getting the data. The end goal is to build a simple and user-friendly data model that is ready for consumption.
 
 ## Architecture
-    assets/img/medallion-arch.png
 
+![Desktop View](/assets/img/medallion-arch.png){: width="800"}
+    
 ## Alternative approaches on Azure
 We could use other azure services instead of Databricks
 
@@ -41,10 +42,12 @@ We could use other azure services instead of Databricks
     2. Microsoft Fabric: As of August 2023, It is still in preview and there is lot of hype around this offering. It is unified all-in-one analytics solution for all your data needs; Data lake (OneLake) + Data engineering + data integration + Data warehousing + Data Science + Real time analytics. On high level, to me, it combines the power of Databricks (lakehouse + machine learning) and Snowflage (cloud data warehouse).
 
 ## Configurations
-    1. Create ADLS2 account and create 3 containers: bronze, silver and gold
+#### 1. Create 3 containers in ADLS2 account: bronze, silver and gold
 
         The bonze container will be used for capturing all raw ingested data. We’ll use <b>Parquet files</b>, because no versioning is required. We will use an YYYYMMDD partition scheme for adding newly loaded data to this container.
 
         The silver container will be used for slightly transformed and standardized data. The file format for silver is <b>Delta</b>. For the design, we’ll develop slowly changing dimensions using DBT.
 
         At last, there’s gold, which will be used for the final integrated data. Again, we’ll use DBT to join different datasets together. The file format for gold is Delta as well.
+
+#### 2. Create ADF pipeline
