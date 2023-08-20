@@ -23,6 +23,7 @@ DBT is a transformation tool in the ETL/ELT process. There is a lot of buzz arou
 ### Azure data lake storage (ADLS gen2):
 
 It is a big data storage services for big data. 2 things differentiates ADLS gen2 from regular azure storage.
+
     1. It can store very large data (in peta bytes).
     2. Gives hierarchical data folder structure and granular security at each folder and files level. 
     3. Integrates with Azure AD (Entra) to provide ACL and RBAC.
@@ -32,4 +33,10 @@ It is a big data storage services for big data. 2 things differentiates ADLS gen
 For building the use case, we’ll be using an Azure SQL database that is configured with sample data: AdventureWorks. This database will play the role as source from which we’ll be getting the data. The end goal is to build a simple and user-friendly data model that is ready for consumption.
 
 ## Architecture
-Coming up ...
+
+## Alternative Azure services
+We could use other azure services instead of Databricks
+
+    1. Azure Synapse Analytics: It combines the traditional microsoft data warehouse with modern azure data services.
+
+    2. Microsoft Fabric: As of August 2023, It is still in preview and there is lot of hype around this offering. It is unified all-in-one analytics solution for all your data needs; Data lake (OneLake) + Data engineering + data integration + Data warehousing + Data Science + Real time analytics. On high level, to me, it combines the power of Databricks (lakehouse + machine learning) and Snowflage (cloud data warehouse).
