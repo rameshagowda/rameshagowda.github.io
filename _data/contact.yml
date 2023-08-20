@@ -1,8 +1,8 @@
 #  The contact options.
 
-- type: Linkedin
-  icon: "fab fa-linkedin"
-  url:  "https://www.linkedin.com/in/rameshagowda"
+- type: linkedin
+  icon: 'fab fa-linkedin'
+  url:  'https://www.linkedin.com/in/rameshagowda'
 
 - type: github
   icon: "fab fa-github"
