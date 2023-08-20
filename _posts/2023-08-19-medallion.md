@@ -3,7 +3,7 @@ title: Medallion Lakehouse Architecture with Azure databricks, datafactory and D
 date: 2023-08-20 12:00 -500
 categories: [Architecture,Azure,Data]
 tags: [medallion, akehouse, azure, dbt, datafactory,databricks, data]
-author: gowda
+# author: gowda
 ---
 
 This blog outlines important components and steps involved in building a medallion lakehouse architecture on Microsoft Azure.
