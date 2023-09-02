@@ -48,7 +48,7 @@ We could use other azure services instead of Databricks
     2. Microsoft Fabric: As of August 2023, It is still in preview and there is lot of hype around this offering. It is unified all-in-one analytics solution for all your data needs; Data lake (OneLake) + Data engineering + data integration + Data warehousing + Data Science + Real time analytics. On high level, to me, it combines the power of Databricks (lakehouse + machine learning) and Snowflage (cloud data warehouse).
 
 ## Configurations
-#### 1. Create 3 containers in ADLS2 account: bronze, silver and gold
+### Create 3 containers in ADLS2 account: bronze, silver and gold
 
 The bronze container will be used for capturing all raw ingested data. We’ll use Parquet files, because no versioning is required. We will use an YYYYMMDD partition scheme for adding newly loaded data to this container.
 
@@ -56,7 +56,7 @@ The silver container will be used for slightly transformed and standardized data
 
 At last, there’s gold, which will be used for the final integrated data. Again, we’ll use DBT to join different datasets together. The file format for gold is Delta as well.
 
-#### 2. Create ADF pipeline
+### Create ADF pipeline
 Here we weill pull data from AdventureWorks on AzureSQL. Query used
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = 'SalesLT'
 
@@ -73,7 +73,7 @@ ADF final state screenshots that shows parameters, linkedservices and calling da
 
 Note that ADF calls databricks notebooks that will do data transformation using DBT.
 
-#### 3. Configure Databricks and KeyVault
+### Configure Databricks and KeyVault
 Open Azure databricks workspace
 On Azure portal, you either create a serviceprincipal or managed identity so that Databricks can access Keyvault
 then copy the ADLS2 account token and store it in KeyVault as Secret.
@@ -136,7 +136,7 @@ Final state of databricks and DBT are available in my git repos.
 https://github.com/rameshagowda/azuredatabricks
 https://github.com/rameshagowda/dbt-azuredatabricks
 
-References:
+## References:
 https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0
 https://www.youtube.com/watch?v=KsO2FHQdILs
 https://anujsen02.medium.com/analytics-engineering-on-the-lakehouse-using-dbt-databricks-part-1-c4d773731ffe https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0
