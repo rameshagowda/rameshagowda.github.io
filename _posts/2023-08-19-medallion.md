@@ -58,12 +58,14 @@ At last, there’s gold, which will be used for the final integrated data. Again
 
 ### Create ADF pipeline
 Here we weill pull data from AdventureWorks on AzureSQL. Query used
+```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = 'SalesLT'
+```
 
-Follow this video: https://www.youtube.com/watch?v=KsO2FHQdILs. For the entire flow, three datasets are needed: TableList, SQLTable, ParquetTable.
+Follow this video: <https://www.youtube.com/watch?v=KsO2FHQdILs>. For the entire flow, three datasets are needed: TableList, SQLTable, ParquetTable.
 
 Final state of the ADF configurations are available in this git repo:
-https://github.com/rameshagowda/azuredatafactory
+<https://github.com/rameshagowda/azuredatafactory>
 
 ADF final state screenshots that shows parameters, linkedservices and calling databricks notebooks from ADF
 ![Desktop View](/assets/img/ADF-linkedservices.png){: width="800"}
@@ -80,11 +82,14 @@ then copy the ADLS2 account token and store it in KeyVault as Secret.
 After creating your secret, ensure that your DataBricks service principle has list and read rights on your secrets. You can configure this under Access Policies.
 To validate that everything works as expected, Create a new DataBricks Notebook and type in the following information:
 
+```python
 abcd = dbutils.secrets.get('dbtScope','blobAccountKey')
-print(abcd
+print(abcd)
+```
 
 Next, add the mounting points to your storage containers. Create another notebook and execute the following code for adding mounting points to bronze, silver and gold:
 
+```python
 #mount bronze
 dbutils.fs.mount(
  source='wasbs://bronze@<<storageaccount>>.blob.core.windows.net/',
@@ -128,18 +133,20 @@ ddl_query = """CREATE OR REPLACE TABLE """+table_schema+"""."""+table_name+"""
 
 #execute query
 spark.sql(ddl_query)
+```
 
 I used below reference to complete my PoC on Azure. Use the link to install and setup DBT. Using DBT we will transform the data and create gold layer.
-https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0
+(https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0)
 
 Final state of databricks and DBT are available in my git repos.
-https://github.com/rameshagowda/azuredatabricks
-https://github.com/rameshagowda/dbt-azuredatabricks
+(https://github.com/rameshagowda/azuredatabricks)
+(https://github.com/rameshagowda/dbt-azuredatabricks)
 
 ## References:
-https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0
-https://www.youtube.com/watch?v=KsO2FHQdILs
-https://anujsen02.medium.com/analytics-engineering-on-the-lakehouse-using-dbt-databricks-part-1-c4d773731ffe https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0
-https://github.com/rameshagowda/azuredatafactory
-https://github.com/rameshagowda/dbt-azuredatabricks
-https://github.com/rameshagowda/azuredatabricks
+    (https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0)
+    (https://www.youtube.com/watch?v=KsO2FHQdILs)
+    (https://anujsen02.medium.com/analytics-engineering-on-the-lakehouse-using-dbt-databricks-part-1-c4d773731ffe https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0)
+### pluralsight tutorial
+    (https://app.pluralsight.com/library/courses/building-etl-pipeline-microsoft-azure-databricks/table-of-contents)
+### To add PowerBI into the pipeline. Follow this tutorial
+    (https://www.youtube.com/watch?v=x3-qUw9XWMA)
