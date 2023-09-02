@@ -145,7 +145,6 @@ Final state of databricks and DBT are available in my git repos.
 ## References:
 <https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0>
 <https://www.youtube.com/watch?v=KsO2FHQdILs>
-<https://anujsen02.medium.com/analytics-engineering-on-the-lakehouse-using-dbt-databricks-part-1-c4d773731ffe https://piethein.medium.com/using-dbt-for-building-a-medallion-lakehouse-architecture-azure-databricks-delta-dbt-31a31fc9bd0>
 ### Pluralsight tutorial
 <https://app.pluralsight.com/library/courses/building-etl-pipeline-microsoft-azure-databricks/table-of-contents>
 ### To add PowerBI into the pipeline. Follow this tutorial
