@@ -2,7 +2,7 @@
 title: Medallion Lakehouse Architecture with Azure databricks, datafactory and DBT
 date: 2023-08-20 12:00 -500
 categories: [Architecture,Azure,Data]
-tags: [medallion, akehouse, azure, dbt, datafactory,databricks, data]
+tags: [medallion, lakehouse, azure, dbt, datafactory,databricks, data]
 author: gowda
 ---
 
@@ -22,15 +22,15 @@ DBT is a transformation tool in the ETL/ELT process. There is a lot of buzz arou
 
 ### Azure data lake storage (ADLS gen2):
 It is a data storage services for big data. 2 things differentiates ADLS gen2 from regular azure storage.
+<!-- 1. It can store very large data (in peta bytes).
+2. Gives hierarchical data folder structure and granular security at each folder and files level. 
+3. Integrates with Azure AD (Entra) to provide ACL and RBAC. -->
 
-    1. It can store very large data (in peta bytes).
-    2. Gives hierarchical data folder structure and granular security at each folder and files level. 
-    3. Integrates with Azure AD (Entra) to provide ACL and RBAC.
-
-### AzureSQL with default AdventureWorks database.
+### AzureSQL 
+Deploy with default AdventureWorks database.
 
 ### Azure KeyVault.
-    required to store ADLS2 token which is used by databricks to connect to datalake.
+Required to store ADLS2 token which is used by databricks to connect to datalake.
 
 Make sure you create above resources in your azure resource groups.
 
@@ -147,4 +147,4 @@ Final state of databricks and DBT are available in my git repos.
 <https://www.youtube.com/watch?v=KsO2FHQdILs>
 <https://anujsen02.medium.com/analytics-engineering-on-the-lakehouse-using-dbt-databricks-part-1-c4d773731ffe>
 <https://app.pluralsight.com/library/courses/building-etl-pipeline-microsoft-azure-databricks/table-of-contents>
-<https://www.youtube.com/watch?v=x3-qUw9XWMA> #To add PowerBI into the pipeline. Follow this tutorial
+<https://www.youtube.com/watch?v=x3-qUw9XWMA>
