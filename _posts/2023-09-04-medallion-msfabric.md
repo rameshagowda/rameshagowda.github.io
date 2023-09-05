@@ -1,12 +1,14 @@
 ---
-title: Medallion Lakehouse Architecture in a MS Fabric lakehouse
+title: Medallion Lakehouse Architecture with Microsoft Fabric
 date: 2023-09-05 12:00 -500
-categories: [Architecture, Azure, Fabric, Data]
+categories: [Architecture,Azure,Fabric,Data]
 tags: [medallion, lakehouse, azure, microsoft-fabric]
 author: gowda
 ---
+## Introduction 
 
 This blog outlines steps involved in building a medallion lakehouse architecture in a microsoft fabric lakehouse using notebooks.
+
     * Create a Workspace
     * Create a Lakehouse
     * Upload data to the Bronze layer
@@ -16,7 +18,7 @@ This blog outlines steps involved in building a medallion lakehouse architecture
 
 ## Architecture
 
-![Desktop View](/assets/img/msfabric-medallion-arch.png){: width="800"}
+![Desktop View](/assets/img/msfabric-medallion-arch.png)
 
 ## Create a Workspace
 
