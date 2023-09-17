@@ -1,6 +1,6 @@
 ---
 title: Deploying Azure Landing zones
-date: 2023-09-17 1:00 -500
+date: 2023-09-17 12:00 -500
 categories: [Architecture,Azure,Landingzone]
 tags: [landing-zone, azure]
 author: gowda
@@ -37,7 +37,7 @@ Lets deploy few scenarios using ALZ Accelerator
     - Log off and login back. Now we also grant "Owner" access for tenant root management group.
         ![Desktop View](/assets/img/landingzone/AADOwner.png) 
     - Launch the ALZ Accelerator from Landing zone documention provided below
-        <https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/implementation-options>
+        <!-- <https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/implementation-options> -->
 
 ## Scenario 2
 
