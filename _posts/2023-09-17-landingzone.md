@@ -1,6 +1,6 @@
 ---
 title: Deploying Azure Landing zones
-date: 2023-09-17 12:00 -500
+date: 2023-09-17 1:00 -500
 categories: [Architecture,Azure,Landingzone]
 tags: [landing-zone, azure]
 author: gowda
@@ -32,7 +32,15 @@ Lets deploy few scenarios using ALZ Accelerator
 
 ### Solution
     - login to portal and create 2 subscriptions. Here we are just creating subscriptions ahead of time and including them into landing zone. I call them Management and Online subscriptions.
-    - 
+    - We should be login with "Global Admin" for the tenant. Before we do that, goto Azure Entra / AD => Properties and make sure that "Access management for Azure resources" turned on.
+        ![Desktop View](/assets/img/landingzone/access-mgmt.png)
+    - Log off and login back. Now we also grant "Owner" access for tenant root management group.
+        ![Desktop View](/assets/img/landingzone/AADOwner.png) 
+    - Launch the ALZ Accelerator from Landing zone documention provided below
+        <https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/implementation-options>
+
+## Scenario 2
+
 
     
 
