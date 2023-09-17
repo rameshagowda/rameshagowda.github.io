@@ -69,7 +69,8 @@ Final state of the ADF configurations are available in this git repo:
 
 ADF final state screenshots that shows parameters, linkedservices and calling databricks notebooks from ADF
 
-![Desktop View](/assets/img/medallion/ADF-linkedservices.png){: width="800"}
+    ![Desktop View](/assets/img/medallion/ADF-linkedservices.png){: width="800"}
+
 <!-- ![Desktop View](/assets/img/medallion/ADF-pipeline.png){: width="800"}
 ![Desktop View](/assets/img/medallion/linkedservice-blobstorage.png){: width="800"}
 ![Desktop View](/assets/img/medallion/linkedservice-params-blobstorage.png){: width="800"} -->
