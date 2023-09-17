@@ -39,7 +39,7 @@ For building the use case, we’ll be using an Azure SQL database that is config
 
 ## Architecture
 
-<!-- ![Desktop View](/assets/img/medallion-arch.png){: width="800"} -->
+![Desktop View](/assets/img/medallion-arch.png){: width="800"}
     
 ## Alternative approaches on Azure
 We could use other azure services instead of Databricks
@@ -68,10 +68,10 @@ Final state of the ADF configurations are available in this git repo:
 <https://github.com/rameshagowda/azuredatafactory>
 
 ADF final state screenshots that shows parameters, linkedservices and calling databricks notebooks from ADF
-<!-- ![Desktop View](/assets/img/ADF-linkedservices.png){: width="800"}
+![Desktop View](/assets/img/ADF-linkedservices.png){: width="800"}
 ![Desktop View](/assets/img/ADF-pipeline.png){: width="800"}
 ![Desktop View](/assets/img/linkedservice-blobstorage.png){: width="800"}
-![Desktop View](/assets/img/linkedservice-params-blobstorage.png){: width="800"} -->
+![Desktop View](/assets/img/linkedservice-params-blobstorage.png){: width="800"}
 
 Note that ADF calls databricks notebooks that will do data transformation using DBT.
 
