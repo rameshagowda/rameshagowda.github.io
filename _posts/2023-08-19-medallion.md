@@ -39,7 +39,7 @@ For building the use case, we’ll be using an Azure SQL database that is config
 
 ## Architecture
 
-![Desktop View](assets/img/medallion-arch.png)
+![Desktop View](/assets/img/medallion-arch.png)
 <!-- ![Desktop View](/assets/img/medallion-arch.png){: width="800"} -->
     
 ## Alternative approaches on Azure
