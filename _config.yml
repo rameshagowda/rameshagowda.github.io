@@ -20,10 +20,10 @@ timezone:
 
 title: Ramesha C Gowda # the main title
 
-tagline: Cloud Platform Architect focussed on Microsoft Azure, Containers & Kubernetes, data, Api, Security and cloud-native application architecture with 2 decades of global IT experience. # it will display as the sub-title
+tagline: Cloud Platform Architect focussed on Microsoft Azure, Containers & Kubernetes, data, Api, Security and cloud-native application architecture. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Cloud Platform Architect focussed on Microsoft Azure, Containers & Kubernetes, data, Api, Security and cloud-native application architecture with 2 decades of global IT experience.
+  Cloud Platform Architect focussed on Microsoft Azure, Containers & Kubernetes, data, Api, Security and cloud-native application architecture.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://rameshagowda.github.io"
