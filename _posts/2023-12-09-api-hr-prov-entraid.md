@@ -8,7 +8,8 @@ author: gowda
 
 ## Introduction
 
-This blog describes how to dynamically provision users in Entra Id from any HR system. This is api-driven approach as apposed to point-to-point provision using Azure provided connectors. 
+This blog describes how to dynamically provision users in Entra Id from any HR system. This is api-driven approach as apposed to point-to-point provision using Azure provided connectors.
+
 This can also be enhanced to writecback few fields into the HR system from Entra Id. Examples for these fields can be email Id or a user Id in Entra. This means that there must be an orchestrator software that can help by firstly converting data from hr system into SCIM+JSON format and calling Entra Id with the Microsoft graph Post endpoint. Secondly, it pulls writeback fields from Entra Id and makes a call to hr system to update.
 
 ### Prerequisites
@@ -19,3 +20,8 @@ This can also be enhanced to writecback few fields into the HR system from Entra
 4. Postman or Bash: To test.
 
 ## Architecture
+
+![Desktop View](/assets/img/hr-system/api-driven-arch.png)
+
+![Desktop View](/assets/img/hr-system/seq-diagram.png)
+
