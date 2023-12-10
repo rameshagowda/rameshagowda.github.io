@@ -25,9 +25,10 @@ This can also be enhanced to writecback few fields into the HR system from Entra
 
 ![Desktop View](/assets/img/hr-system/seq-diagram.png)
 
+## Steps
+References links explain end to end process thoroughly.
 
-## References
-
+## References:
 * <https://www.youtube.com/watch?v=olkOYEyJB1o>
 * <https://www.youtube.com/watch?v=4FLEroQ8zmQ>
 * <https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-curl-tutorial>
