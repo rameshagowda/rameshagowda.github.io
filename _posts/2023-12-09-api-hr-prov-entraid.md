@@ -28,10 +28,5 @@ This can also be enhanced to writecback few fields into the HR system from Entra
 ## Steps
 References links explain end-to-end process thoroughly.
 
-On high level
-1. Create 2 enterprise apps / app registrations service principal in Entra Id
-2. Get the POST endpoint which is specific to your tenant and Entra Id. Also, endpoint to get token.
-3. Copy the Client id and secret for service principal.
-4. make POST endpoint call to get a JWT token with curl using SP secret and client id. endpoint looks like this: https://login.microsoftonline.com/tenant-id/oauth2/v2.0/token 
-5. make a POST call with curl to /bulkupload url with the token to create users. Here just give the path to scim+json payload. References provided below has has an example of how to make post call with curl and json payload file.
+## References
 
