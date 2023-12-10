@@ -30,6 +30,6 @@ This can also be enhanced to writecback few fields into the HR system from Entra
 References links explain end to end process thoroughly.
 
 ## References
-
-
-
+* <https://www.youtube.com/watch?v=olkOYEyJB1o>
+* <https://www.youtube.com/watch?v=4FLEroQ8zmQ>
+* <https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-curl-tutorial>
