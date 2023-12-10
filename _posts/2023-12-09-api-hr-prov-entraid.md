@@ -25,7 +25,8 @@ This can also be enhanced to writecback few fields into the HR system from Entra
 
 ![Desktop View](/assets/img/hr-system/seq-diagram.png)
 
-## Steps
+### Steps
+
 References links explain end to end process thoroughly.
 
 ## References:
