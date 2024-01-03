@@ -18,7 +18,7 @@ Databricks is popular service/tool to build data Lakehouse architecture. Databri
 Datafactory is a integration and orchestration tool on Azure cloud. It can also host traditional microsoft specific on-prem ETL tool called SSIS. It connects to various data providers and pull data into azure datalake storage before processing. It facilitates other azure tools like azure databricks, azure functions and azure LogicApps to do specific data integration and processing.
 
 ### Data Build Tool (DBT):
-DBT is a transformation tool in the ETL/ELT process. There is a lot of buzz around DBT in data community. It is an open source command line tool written in Python. DBT focusses on the transformation, so it doesn’t extract or load data, but only transforms data. It is declarative and supports git review process, unit testing, monitoring and easy documentation with data lineage DAG.
+DBT is a transformation tool in the ETL/ELT process. There is a lot of buzz around DBT in data community. It is an open source command line tool written in Python. DBT focusses on the transformation, so it doesn’t extract or load data, but only transforms data. It is declarative and supports git review process, unit testing, monitoring and easy documentation.
 
 ### Azure data lake storage (ADLS gen2):
 It is a data storage services for big data. 3 things differentiates ADLS gen2 from regular azure storage.
