@@ -24,6 +24,12 @@ I am a Cloud Platform Architect with close to 2 decades of IT experience across 
 - Linux Foundation Certified CKAD Kubernetes Application Developer
 - HashiCorp Certified: Terraform Associate
 
+# Certifications and Learn Profile
+- <https://learn.microsoft.com/en-ca/users/rameshacgowda-8837/transcript/7o6wxi1yxrge9g3?wt.mc_id=certnurture_eml14_email_wwl>
+- <https://www.credly.com/users/ramesha-chaluve-gowda>
+
+
+
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
