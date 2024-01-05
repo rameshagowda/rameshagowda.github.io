@@ -8,7 +8,7 @@ order: 4
 
 I am a Cloud Platform Architect with close to 2 decades of IT experience across Canada, USA, and India. I have hands-on end-to-end experience in the following areas:
 
-- Microsoft Azure Cloud Platform Engineering, Architecture, DevOps automation, and Cybersecurity
+- Microsoft Azure Cloud Platform Engineering, Architecture, DevSecOps automation, and Cybersecurity
 - Cloud-native Software Architecture with C#, Asp.Net Core ecosystem 
 - Data Engineering and API-driven Integrations Architecture on MS SQL and Azure ecosystem
 - IaC, Docker and Kubernetes ecosystem
