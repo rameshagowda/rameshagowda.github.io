@@ -1,8 +1,8 @@
 ---
-title: Medallion (Delta) Lakehouse Architecture with Azure databricks, datafactory and DBT
+title: Medallion Lakehouse Architecture with Azure databricks, datafactory and DBT
 date: 2023-08-20 12:00 -500
 categories: [Architecture,Azure,Data]
-tags: [medallion, delta, lakehouse, azure, dbt, datafactory,databricks, data]
+tags: [medallion, delta-architecture, lakehouse, azure, dbt, datafactory,databricks, data]
 author: gowda
 ---
 
