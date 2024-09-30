@@ -1,8 +1,8 @@
 ---
 title: Using RAG (Retrival Augmented Generation) pattern with LLMs
 date: 2024-10-01 12:00 -500
-categories: [Architecture,AI,LLM]
-tags: [RAG, LLM, api, AI]
+categories: [Architecture,GenAI,LLM]
+tags: [RAG, LLM, api, GenAI]
 author: gowda
 ---
 
