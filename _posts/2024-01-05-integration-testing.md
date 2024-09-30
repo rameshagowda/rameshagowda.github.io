@@ -5,7 +5,7 @@ categories: [Architecture,DotNet,Testing, Docker]
 tags: [docker-compose, testing, api, c#]
 author: gowda
 ---
-<!--
+
 ## Introduction
 
 TestContainers is an open-source library that simplifies the process of running integration tests by providing lightweight, disposable instances of databases, message brokers, APIs, web browsers, and other services within Docker containers. 
@@ -29,4 +29,3 @@ Follow / clone the github repo to test it
 
 ### References
 * <https://testcontainers.com/guides/getting-started-with-testcontainers-for-dotnet>
--->
