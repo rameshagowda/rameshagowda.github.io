@@ -6,16 +6,3 @@ tags: [RAG, LLM, api, GenAI]
 author: gowda
 ---
 
-## Introduction
-
-
-
-## Why use Testcontainers with .Net?
-
-
-### Prerequisites
-
-
-
-### References
-
