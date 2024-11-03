@@ -27,7 +27,7 @@ Real time API works on WebSockets protocol to connect to end users.
 2. Update the env file with your OpenAI API key
 3. Install the packages
 4. run the code
-<!--
+
 #### Setup Ngrok tunneling solution which is similar to Azure Relay
 1. Signup for Ngrok account free service to get the app up-and-running locally for development and testing. This is not required if you are deploying the code to Cloud or other hosting platforms like Replit. When developing & testing locally, you'll need to open a tunnel to forward requests to your local development server.
 2. Install the Ngrok service on your machine as instructions provided. Also, follow the instructions to open the tunnel to your app running locally.
@@ -45,5 +45,3 @@ Call the Twilio phone number from your phone to get started with talking to AI S
 * <https://www.youtube.com/watch?v=OVguB1h-eTs>
 * <https://www.youtube.com/watch?v=xf6xT7RbTPo>
 * <https://www.youtube.com/watch?v=b-DP0xPBwmI>
-
--->
