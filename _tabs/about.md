@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Cloud Platform Architect
+# Principal Architect
 
 I am a Principal Architect with 2 decades of IT experience across Canada, USA, and India. I have hands-on end-to-end experience in the following areas:
 
