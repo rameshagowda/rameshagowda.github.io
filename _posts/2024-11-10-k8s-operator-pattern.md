@@ -47,10 +47,24 @@ Basic components of Kubernetes Operator pattern
         domain is the api group where all your custom crd, cr, controller logic reside
         repo is the github repo
 
-        ```sh
+        ``` shell
         operator-sdk init --domain rcgowda-operator.io --owner "ramesha c gowda" --repo github.com/rameshagowda/k8s-operator-scaler
         ```
-    3. 
+    3. Create an API for your custom resource. kind is your custom resource name. Say yes to create resource and controller.
+        ``` shell
+        operator-sdk create api --kind Scaler --group api --version v1alpha1
+        ```
+    4. Compare the code in git repo provided to copy the logic. You should be looking at API and Controller folder.
+    5. Once your logic is added, you can use make and kubectl commands to create CR and CRD, build and test it.
+    Make sure to create a cluster using kind
+        ``` shell
+        make manifests
+        kind create cluster
+        kubectl apply -f config/crd/bases/api.<your yml file>
+        kubectl get crd, cr
+        make run
+        ```
+    NOTE: Follow the youtube link to debug and test the operator.
 
 ## References:
 
