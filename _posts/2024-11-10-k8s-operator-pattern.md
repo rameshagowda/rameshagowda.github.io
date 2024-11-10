@@ -17,7 +17,7 @@ When do I use Kubernetes Operator? Use it for Day-2 production operations which 
 Some of the examples include - Increasing the Pods during business hours and decreasing after business hours automatically. - Alerting an Production support Operator via Teams, Slack if a status of Pod changes. - Taking periodic backup of database or files - Package your solution as an installer for 3rd parties / customers
 
 NOTE: This example shows the PoC but it requires to create an image of the solution and push to container registry before use it in production cluster.
-<https://www.youtube.com/watch?v=b-DP0xPBwmI>
+<https://github.com/rameshagowda/k8s-operator-scaler>
 
 ### Prerequisites
 
@@ -40,8 +40,19 @@ Basic components of Kubernetes Operator pattern
 
 4. API: The Kubernetes API is used to interact with the custom resources and the controller.
 
+## Implementation
+
+    1. Create a project folder in VS Code
+    2. Create operator boiler-plate template using operator-sdk.
+        domain is the api group where all your custom crd, cr, controller logic reside
+        repo is the github repo
+
+        ```sh
+        operator-sdk init --domain rcgowda-operator.io --owner "ramesha c gowda" --repo github.com/rameshagowda/k8s-operator-scaler
+        ```
+    3. 
+
 ## References:
 
 - <https://www.youtube.com/watch?v=FHjLL5e7h00>
 - <https://medium.com/operators/operator-pattern-kubernetes-openshift-380ddc6a147c>
-- <https://www.youtube.com/watch?v=b-DP0xPBwmI>
