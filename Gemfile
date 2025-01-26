@@ -8,6 +8,10 @@ gem 'csv'
 gem 'json'
 gem 'yaml'
 gem 'base64'
+gem 'google-protobuf', '~> 3.18.0'
+gem 'bigdecimal'
+gem 'logger'
+gem 'fileutils'
 
 
 group :test do
