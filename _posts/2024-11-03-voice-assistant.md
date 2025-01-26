@@ -52,4 +52,4 @@ Call the Twilio phone number from your phone to get started with talking to AI S
 - <https://www.youtube.com/watch?v=OVguB1h-eTs>
 - <https://www.youtube.com/watch?v=xf6xT7RbTPo>
 - <https://www.youtube.com/watch?v=b-DP0xPBwmI>
-- <https://www.youtube.com/watch?v=vCTWVPcI3C4>
+- <https://www.youtube.com/watch?v=2afwJrtBmZE>
