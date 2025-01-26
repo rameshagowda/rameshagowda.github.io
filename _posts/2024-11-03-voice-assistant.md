@@ -52,3 +52,4 @@ Call the Twilio phone number from your phone to get started with talking to AI S
 - <https://www.youtube.com/watch?v=OVguB1h-eTs>
 - <https://www.youtube.com/watch?v=xf6xT7RbTPo>
 - <https://www.youtube.com/watch?v=b-DP0xPBwmI>
+- <https://techcommunity.microsoft.com/blog/azure-ai-services-blog/from-zero-to-hero-building-your-first-voice-bot-with-gpt-4o-real-time-api-using-/4269038>
