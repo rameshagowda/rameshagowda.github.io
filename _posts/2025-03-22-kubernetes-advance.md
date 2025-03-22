@@ -18,6 +18,9 @@ Outline steps to implement some of the Kubernetes advanced concepts.
 
 ## Create Kubernetes KinD cluster locally
 
+- Create a cluster with 3 nodes - 1 Control node, 2 Worker nodes
+- Allow control node to make requests to ingress controller over ports for both http (80) and https (443)
+
 ```yaml
 apiVersion: kind.x-k8s.io/v1alpha4
 kind: Cluster
