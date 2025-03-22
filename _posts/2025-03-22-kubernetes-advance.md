@@ -18,30 +18,6 @@ Outline steps to implement some of the Kubernetes advanced concepts.
 
 ## Create Kubernetes KinD cluster locally
 
-    ```plaintext
-    apiVersion: kind.x-k8s.io/v1alpha4
-    kind: Cluster
-    name: dev-cluster
-    nodes:
-    - role: control-plane
-        kubeadmConfigPatches:
-        - |
-            kind: InitConfiguration
-            nodeRegistration:
-            kubeletExtraArgs:
-                node-labels: "ingress-ready=true"
-        extraPortMappings:
-        - containerPort: 80
-            hostPort: 80
-            protocol: TCP
-        - containerPort: 443
-            hostPort: 443
-            protocol: TCP
-    - role: worker
-    - role: worker
-
-    ```
-
 ### Azure databricks (ADB):
 
 Databricks is popular service/tool to build data Lakehouse architecture. Databricks is built on top of popular opensource Apache Spark technology for big data processing. It is a complex process to build and manage a cluster with Apache Spark. This is where Databricks came into picture and made the entire process of creating and managing the cluster easy. Databricks on Azure utilizes the infrastructure capabilities of cloud and makes it intuitive to use. Azure powers the computation and storage layers, integrates with data and orchestration tools, provides security and monitoring capabilities.
