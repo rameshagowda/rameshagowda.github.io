@@ -71,9 +71,12 @@ nodes:
 
 - Create ingress resource to define routing rules.
 
-        - kubectl create ing my-ingress --rule="myapp.local/=my-test-app:80" --annotation nginx.ingress.kubernetes.io/rewrite-target=/$2
+        - kubectl create ing my-ingress --rule="myapp.local/my-test-app=my-test-app-service:80" --annotation nginx.ingress.kubernetes.io/rewrite-target=/$2
 
-### Azure data lake storage (ADLS gen2):
+- This is how Ingress rule looks like after execting the above command.
+  ![Desktop View](/assets/img/k8s/ingrule.png)
+
+## Local DNS mapping
 
 It is a data storage services for big data. 3 things differentiates ADLS gen2 from regular azure storage.
 
