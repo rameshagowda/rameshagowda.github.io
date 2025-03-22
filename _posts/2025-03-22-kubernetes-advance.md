@@ -76,13 +76,14 @@ nodes:
 - This is how Ingress rule looks like after execting the above command.
   ![Desktop View](/assets/img/k8s/ingrule.png)
 
-## Local DNS mapping
+## Local DNS mapping and Test the APP
 
-It is a data storage services for big data. 3 things differentiates ADLS gen2 from regular azure storage.
+        - Update the file /etc/hosts to create a record: 127.0.0.1 myapp.local
 
-1. It can store very large data (in peta bytes).
-2. Gives hierarchical data folder structure and granular security at each folder and files level.
-3. Integrates with Azure AD (Entra) to provide ACL and RBAC.
+        - curl http://example.local -v
+
+- Access it from the browser:
+  ![Desktop View](/assets/img/k8s/ingrule.png)
 
 ### AzureSQL
 
