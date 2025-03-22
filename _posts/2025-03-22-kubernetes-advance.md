@@ -18,7 +18,7 @@ Outline steps to implement some of the Kubernetes advanced concepts.
 
 ## Create Kubernetes KinD cluster locally
 
-    ```yaml
+    ```plaintext
     apiVersion: kind.x-k8s.io/v1alpha4
     kind: Cluster
     name: dev-cluster
