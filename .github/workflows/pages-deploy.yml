@@ -54,8 +54,8 @@ jobs:
         run: |
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
-      - name: Debug Build Output
-        run: ls -al "_site${{ steps.pages.outputs.base_path }}"
+      # - name: Debug Build Output
+      #  run: ls -al "_site${{ steps.pages.outputs.base_path }}"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3.0.1
