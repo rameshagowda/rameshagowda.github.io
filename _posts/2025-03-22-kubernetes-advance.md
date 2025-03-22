@@ -97,21 +97,25 @@ Real production workloads will always be encrypted with Certificate Authority (C
 
 - Create TLS certificate - Note the domain name in CN which is matching with my local domain.
 
-        - openssl req -x509 -new -nodes -key tls.key -subj "/CN=myapp.local” -days 10 -out tls.crt
+        - openssl req -x509 -new -nodes -key ingress-tls.key -subj "/CN=myapp.local” -days 10 -out tls.crt
 
 - Optional - View certificate details
 
         - openssl x509 -in tls.crt -noout -text
 
-### Azure KeyVault.
+### Kubernetes Secret
 
-Required to store ADLS2 token which is used by databricks to connect to datalake.
+A Kubernetes secret for TLS is required. Lets create one.
 
-Make sure you create above resources in your azure resource groups.
+        - k create secret tls my-secret --cert=tls.crt --key=ingress-tls.key
 
-## Usecase
+![Desktop View](/assets/img/k8s/secret.png)
 
-For building the use case, we’ll be using an Azure SQL database that is configured with sample data: AdventureWorks. This database will play the role as source from which we’ll be getting the data. The end goal is to build a simple and user-friendly data model that is ready for consumption.
+### Enable TLS in Ingress Reource
+
+- Edit the ingress resource to enable TLS or delete and recreate the ingress resource.
+
+        - kubectl create ing my-ingress --rule="myapp.local/my-test-app=my-test-app-service:80,tls=my-secret" --annotation nginx.ingress.kubernetes.io/rewrite-target=/$2
 
 ## Architecture
 
