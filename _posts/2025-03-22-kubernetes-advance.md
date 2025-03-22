@@ -80,10 +80,10 @@ nodes:
 
         - Update the file /etc/hosts to create a record: 127.0.0.1 myapp.local
 
-        - curl http://example.local -v
+        - test it: curl http://example.local -v
 
 - Access it from the browser:
-  ![Desktop View](/assets/img/k8s/ingrule.png)
+  ![Desktop View](/assets/img/k8s/myapp.png)
 
 ### AzureSQL
 
