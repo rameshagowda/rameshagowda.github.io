@@ -6,9 +6,17 @@ tags: [cni, ingress, routing, networkpolicies]
 author: gowda
 ---
 
-This blog outlines important components and steps involved in building a medallion lakehouse architecture on Microsoft Azure.
+## Introduction
 
-## Components of Medallion lakehouse architecture
+Discuss and outline steps to implement some of the Kubernetes advanced concepts
+
+1. Create a local Kubernetes in Docker (KinD) cluster with multiple nodes. Kind cluster gives a similar experience as a production Kubernetes cluster on your local desktop.
+2. Setup a simple ingress routing using Nginx ingress controller.
+3. Introduce TLS encryption to ingress routing.
+4. Compare the Network policies between Cilium CNI and Kubernetes CNI.
+5. Some of the advantages using Cilium as CNI in networking, observability and service mesh.
+
+## Create Kubernetes KinD cluster locally
 
 I will introduce and demonstrate how these tools work together with Databricks Medallion architecture.
 
