@@ -52,9 +52,7 @@ nodes:
 
 - Apply Nginx controller
 
-```yaml
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
-```
+        - kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
 
 - Ingress controller is up and running
   ![Desktop View](/assets/img/k8s/ing.png)
