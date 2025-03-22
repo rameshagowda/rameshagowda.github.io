@@ -67,7 +67,7 @@ nodes:
 
         - kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
 
-## Ingress Resource
+### Ingress Resource
 
 - Create ingress resource to define routing rules.
 
@@ -76,7 +76,7 @@ nodes:
 - This is how Ingress rule looks like after execting the above command.
   ![Desktop View](/assets/img/k8s/ingrule.png)
 
-## Local DNS mapping and Test the APP
+### Local DNS mapping and Test the APP
 
         - Update the file /etc/hosts to create a record: 127.0.0.1 myapp.local
 
@@ -85,9 +85,23 @@ nodes:
 - Access it from the browser:
   ![Desktop View](/assets/img/k8s/myapp.png)
 
-### AzureSQL
+## TLS enabled Ingress Resource
 
-Deploy with default AdventureWorks database.
+### Self Signed certificates
+
+Real production workloads will always be encrypted with Certificate Authority (CA) signed TLS certificates. Here lets create self-signed certificates using using OpenSSL tool. This certificate will enable TLS encryption with ingress routing.
+
+- Cretae a TLS Key.
+
+        - openssl genrsa -out tls.key 2048
+
+- Create TLS certificate - Note the domain name in CN which is matching with my local domain.
+
+        - openssl req -x509 -new -nodes -key tls.key -subj "/CN=myapp.local” -days 10 -out tls.crt
+
+- Optional - View certificate details
+
+        - openssl x509 -in tls.crt -noout -text
 
 ### Azure KeyVault.
 
