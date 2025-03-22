@@ -48,9 +48,16 @@ nodes:
 - Now we have KinD cluster with Ingress enabled.
   ![Desktop View](/assets/img/k8s/kind.png)
 
-## Ingress Routing
+## Ingress Routing with Nginx Controller
 
-Databricks is popular service/tool to build data Lakehouse architecture. Databricks is built on top of popular opensource Apache Spark technology for big data processing. It is a complex process to build and manage a cluster with Apache Spark. This is where Databricks came into picture and made the entire process of creating and managing the cluster easy. Databricks on Azure utilizes the infrastructure capabilities of cloud and makes it intuitive to use. Azure powers the computation and storage layers, integrates with data and orchestration tools, provides security and monitoring capabilities.
+- Apply Nginx controller
+
+```yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+```
+
+- Ingress controller is up and running
+  ![Desktop View](/assets/img/k8s/ing.png)
 
 ### Azure Data factory (ADF):
 
