@@ -8,17 +8,39 @@ author: gowda
 
 ## Introduction
 
-Discuss and outline steps to implement some of the Kubernetes advanced concepts
+Outline steps to implement some of the Kubernetes advanced concepts.
 
 1. Create a local Kubernetes in Docker (KinD) cluster with multiple nodes. Kind cluster gives a similar experience as a production Kubernetes cluster on your local desktop.
 2. Setup a simple ingress routing using Nginx ingress controller.
 3. Introduce TLS encryption to ingress routing.
 4. Compare the Network policies between Cilium CNI and Kubernetes CNI.
-5. Some of the advantages using Cilium as CNI in networking, observability and service mesh.
+5. Discuss some of the advantages using Cilium as CNI in networking, observability and service mesh.
 
 ## Create Kubernetes KinD cluster locally
 
-I will introduce and demonstrate how these tools work together with Databricks Medallion architecture.
+    ```yaml
+    apiVersion: kind.x-k8s.io/v1alpha4
+    kind: Cluster
+    name: dev-cluster
+    nodes:
+    - role: control-plane
+        kubeadmConfigPatches:
+        - |
+            kind: InitConfiguration
+            nodeRegistration:
+            kubeletExtraArgs:
+                node-labels: "ingress-ready=true"
+        extraPortMappings:
+        - containerPort: 80
+            hostPort: 80
+            protocol: TCP
+        - containerPort: 443
+            hostPort: 443
+            protocol: TCP
+    - role: worker
+    - role: worker
+
+    ```
 
 ### Azure databricks (ADB):
 
@@ -57,15 +79,6 @@ For building the use case, we’ll be using an Azure SQL database that is config
 ## Architecture
 
 ![Desktop View](/assets/img/medallion/medallion-arch.png){: width="800"}
-
-## Alternative approaches on Azure
-
-We could use other azure services instead of Databricks
-
-    1. Azure Synapse Analytics: It combines the traditional microsoft data warehouse with modern azure data services.
-    2. Microsoft Fabric: As of August 2023, It is still in preview and there is lot of hype around this offering. It is unified all-in-one analytics solution for all your data needs; Data lake (OneLake) + Data engineering + data integration + Data warehousing + Data Science + Real time analytics. On high level, to me, it combines the power of Databricks (lakehouse + machine learning) and Snowflage (cloud data warehouse).
-
-## Configurations
 
 ### Create 3 containers in ADLS2 account: bronze, silver and gold
 
