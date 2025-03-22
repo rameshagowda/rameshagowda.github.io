@@ -57,7 +57,15 @@ nodes:
 - Ingress controller is up and running
   ![Desktop View](/assets/img/k8s/ing.png)
 
-### Azure Data factory (ADF):
+## Create a test application deployment and a service
+
+- Create a deployment
+
+        - kubectl create deployment my-test-app --image=nginx
+
+- Create a service for the deployment
+
+        - kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
 
 Datafactory is a integration and orchestration tool on Azure cloud. It can also host traditional microsoft specific on-prem ETL tool called SSIS. It connects to various data providers and pull data into azure datalake storage before processing. It facilitates other azure tools like azure databricks, azure functions and azure LogicApps to do specific data integration and processing.
 
