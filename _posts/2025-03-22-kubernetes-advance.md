@@ -57,21 +57,21 @@ nodes:
 - Ingress controller is up and running
   ![Desktop View](/assets/img/k8s/ing.png)
 
-## Create a test application deployment and a service
+## Application deployment and a service
 
-- Create a deployment
+- Create a deployment.
 
         - kubectl create deployment my-test-app --image=nginx
 
-- Create a service for the deployment
+- Create a service for the deployment.
 
         - kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
 
-Datafactory is a integration and orchestration tool on Azure cloud. It can also host traditional microsoft specific on-prem ETL tool called SSIS. It connects to various data providers and pull data into azure datalake storage before processing. It facilitates other azure tools like azure databricks, azure functions and azure LogicApps to do specific data integration and processing.
+## Ingress Resource
 
-### Data Build Tool (DBT):
+- Create ingress resource to define routing rules.
 
-DBT is a transformation tool in the ETL/ELT process. There is a lot of buzz around DBT in data community. It is an open source command line tool written in Python. DBT focusses on the transformation, so it doesn’t extract or load data, but only transforms data. It is declarative and supports git review process, unit testing, monitoring, data lineage and easy documentation.
+        - kubectl create ing my-ingress --rule="myapp.local/=my-test-app:80" --annotation nginx.ingress.kubernetes.io/rewrite-target=/$2
 
 ### Azure data lake storage (ADLS gen2):
 
