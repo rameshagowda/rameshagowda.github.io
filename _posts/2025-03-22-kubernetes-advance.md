@@ -130,7 +130,7 @@ A Kubernetes secret for TLS is required. Lets create one.
   ![Desktop View](/assets/img/k8s/myapp-tls.png)
   ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
 
-## Network Security with Cilium CNI
+## Network Security with Cilium CNI (Container Networking Interface)
 
         - Cilium is lightweight, best performed CNI and is eBPF based that works directly with Linux Kernel to will eliminate sidecar and kube-proxy.
         - Cilium is best suited for Layer 3/4 and Layer 7 network policies. Other CNIs like Calico, AzureCNI only support Layer 3/4 policies. mTLS between pods with network policies handled differently.
@@ -153,6 +153,13 @@ networking:
 
 - notice that cluste is not ready yet. it is because there is no CNI installed.
   ![Desktop View](/assets/img/k8s/kind-cilium.png)
+
+- lets download and install cilium CNI in KinD cluster: <https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/>
+
+        - cilium install
+
+- Now cluster nodes and pods will be in ready state.
+  ![Desktop View](/assets/img/k8s/cilium-status.png)
 
 ## References
 
