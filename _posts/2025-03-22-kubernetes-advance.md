@@ -190,6 +190,10 @@ spec:
 - Create the policy and view.
   ![Desktop View](/assets/img/k8s/policy.png)
 
+- Login to the pod in the default namespace and try to browse google or microsoft. Egress traffic is being blocked.
+  ![Desktop View](/assets/img/k8s/policy.png)
+
 ## References
 
 <https://dev.to/iamunnip/kind-setting-up-cni-using-calico-part-7-31p2>
+<https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/>
