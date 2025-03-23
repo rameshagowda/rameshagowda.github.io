@@ -130,9 +130,14 @@ A Kubernetes secret for TLS is required. Lets create one.
   ![Desktop View](/assets/img/k8s/myapp-tls.png)
   ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
 
-## KinD cluster with Cilium CNI
+## Network Security with Cilium CNI
 
-Setup a separate Kind cluster with Cilium CNI. Lets understand the advantages of CNI by comparing network policies of CiliumCNI to default Kubernetes CNI (similar to Calico or AzureCNI).
+        - Cilium is lightweight, best performed CNI and is eBPF based that works directly with Linux Kernel to will eliminate sidecar and kube-proxy.
+        - Cilium is best suited for Layer 3/4 and Layer 7 network policies. Other CNIs like Calico, AzureCNI only support Layer 3/4 policies. mTLS between pods with network policies handled differently.
+        - Observabilty with Hubble with live monitoring of traffic - May not matured compare to istio or Prometheus/ Grafana based monitoring.
+        - Cilium can also used as ServiceMesh for traffic routing. Istio may be still preferred for complex routing and multi-cluster routing.
+
+- Setup a separate Kind cluster with Cilium CNI. Lets understand the advantages of CNI by comparing network policies of CiliumCNI to default Kubernetes CNI (similar to Calico or AzureCNI).
 
 ## References
 
