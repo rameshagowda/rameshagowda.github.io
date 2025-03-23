@@ -110,3 +110,8 @@ A Kubernetes secret for TLS is required. Lets create one.
         - kubectl create secret tls my-secret --cert=tls.crt --key=ingress-tls.key
 
 ![Desktop View](/assets/img/k8s/secret.png)
+
+### Enable TLS in Ingress Reource
+
+- Edit the ingress resource to enable TLS or delete and recreate the ingress resource.
+- Delete the previous ingress resource rule
