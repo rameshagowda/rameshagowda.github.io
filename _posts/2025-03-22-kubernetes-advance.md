@@ -172,7 +172,23 @@ networking:
 - In contrast to Calico and Azure CNI, Cilium natively supports Layer 7 policies by leveraging eBPF for deep packet inspection. Cilium can enforce application-aware policies directly and efficiently, such as allowing specific HTTP methods (e.g., GET, POST) or filtering by URL paths and hostnames.
   ![Desktop View](/assets/img/k8s/CNIs.png)
 
+- Lets apply the network policy to deny all egress traffic from default namespace
 
+```yaml
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: deny-all-egress
+  namespace: default
+spec:
+  endpointSelector: {} # Match all pods in the default namespace
+  egressDeny:
+    - toEntities:
+        - all # Deny all egress traffic to all destinations
+```
+
+- Create the policy and view.
+  ![Desktop View](/assets/img/k8s/policy.png)
 
 ## References
 
