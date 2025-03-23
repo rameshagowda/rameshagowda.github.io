@@ -163,10 +163,10 @@ networking:
 
 - Create a deployment and its service
 
-        kubectl create deployment my-test-app --image=nginx
-        kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
+        - kubectl create deployment my-test-app --image=nginx
+        - kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
 
-- Create a network policy
+## Compare network policies
 
 ## References
 
