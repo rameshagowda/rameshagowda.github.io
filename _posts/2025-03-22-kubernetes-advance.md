@@ -115,3 +115,17 @@ A Kubernetes secret for TLS is required. Lets create one.
 
 - Edit the ingress resource to enable TLS or delete and recreate the ingress resource.
 - Delete the previous ingress resource rule
+
+        - kubectl delete ing my-ingress
+
+- Create ingress resource rule with tls enabled
+
+        - kubectl create ing my-ingress --rule="myapp.local/my-test-app=my-test-app-service:80,tls=my-secret" --annotation nginx.ingress.kubernetes.io/rewrite-target=/$2
+
+- Test the application with https.
+
+        - curl https://example.local --insecure -v
+
+- Access it from browser by accepting the insecure warning.
+  ![Desktop View](/assets/img/k8s/myapp-tls.png)
+  ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
