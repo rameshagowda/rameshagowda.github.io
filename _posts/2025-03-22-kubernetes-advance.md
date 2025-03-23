@@ -126,8 +126,6 @@ A Kubernetes secret for TLS is required. Lets create one.
 
         - curl https://example.local --insecure -v
 
-- From Browser, accept the insecure warning.
+- Access it from browser by accepting the insecure warning.
   ![Desktop View](/assets/img/k8s/myapp-tls.png)
   ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
-
-## References
