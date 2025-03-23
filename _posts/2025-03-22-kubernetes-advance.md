@@ -156,10 +156,17 @@ networking:
 
 - lets download and install cilium CNI in KinD cluster: <https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/>
 
-        - cilium install
+        cilium install
 
 - Now cluster nodes and pods will be in ready state.
   ![Desktop View](/assets/img/k8s/cilium-status.png)
+
+- Create a deployment and its service
+
+        kubectl create deployment my-test-app --image=nginx
+        kubectl expose deployment my-test-app --name=my-test-app-service --type=ClusterIP --port=80 --target-port=80
+
+- Create a network policy
 
 ## References
 
