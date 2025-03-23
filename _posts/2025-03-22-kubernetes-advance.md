@@ -129,3 +129,7 @@ A Kubernetes secret for TLS is required. Lets create one.
 - Access it from browser by accepting the insecure warning.
   ![Desktop View](/assets/img/k8s/myapp-tls.png)
   ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
+
+## References
+
+<https://dev.to/iamunnip/kind-setting-up-cni-using-calico-part-7-31p2>
