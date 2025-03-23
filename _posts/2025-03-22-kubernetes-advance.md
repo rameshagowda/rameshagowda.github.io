@@ -130,6 +130,10 @@ A Kubernetes secret for TLS is required. Lets create one.
   ![Desktop View](/assets/img/k8s/myapp-tls.png)
   ![Desktop View](/assets/img/k8s/myapp-tlsb.png)
 
+# KinD cluster with Cilium CNI
+
+Setup a separate Kind cluster with Cilium CNI. Lets understand the advantages of CNI by comparing network policies of CiliumCNI to default Kubernetes CNI (similar to Calico or AzureCNI).
+
 ## References
 
 <https://dev.to/iamunnip/kind-setting-up-cni-using-calico-part-7-31p2>
