@@ -8,9 +8,9 @@ order: 4
 
 I am a Principal Architect with 2 decades of IT experience across Canada, USA, and India. I have hands-on end-to-end experience in the following areas:
 
-- Microsoft Azure Cloud Platform Engineering, Architecture, DevSecOps automation, and Cybersecurity
+- Microsoft Azure Cloud Platform Engineering, Architecture, DevSecOps automation, Cloud Networking and Cybersecurity
 - Cloud-native Software Architecture with C#, Asp.Net Core, SQL and Python ecosystem 
-- Data Engineering and API-driven Integrations Architecture on Microsoft Azure Data and Integrations ecosystem
+- Data Engineering and API-driven Integrations Architecture on Microsoft Azure Databricks and APIM Integrations ecosystem
 - IaC, Docker and Kubernetes ecosystem
 
 
