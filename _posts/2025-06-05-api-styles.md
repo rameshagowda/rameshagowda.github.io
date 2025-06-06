@@ -10,15 +10,67 @@ author: gowda
 
 ## 1. SOAP
 
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
+
 ## 2. REST
+
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
 
 ## 3. GraphQL
 
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
+
 ## 4. RPC
+
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
 
 ## 5. WebSocket
 
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
+
 ## 6. Webhooks
+
+### Pros
+
+### Cons
+
+### Use cases
+
+### References
+
+### Can we mix these APIs in the same Product?
+
+    - Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
 
 ## API automation strategy
 
