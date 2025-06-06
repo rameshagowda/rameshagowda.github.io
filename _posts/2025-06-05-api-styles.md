@@ -68,11 +68,11 @@ author: gowda
 
 ### References
 
-### Can we mix these APIs in the same Product?
+- Can we mix these APIs in the same Product?
 
-    - Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
+  Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
 
-## API automation strategy
+## API test automation strategy
 
 - Unit Test
 - Integration Test
