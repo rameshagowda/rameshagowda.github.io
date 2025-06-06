@@ -40,3 +40,4 @@ author: gowda
 - <https://community.postman.com/categories>
 - <https://www.youtube.com/watch?v=1qU6fIDht-s&list=PL6tu16kXT9PqcGCrFRw7mBFdqwG7x7Kcz&index=6>
 - <https://www.youtube.com/watch?v=Ix6z1kBweuk>
+- <https://learning.postman.com/docs/tests-and-scripts/tests-and-scripts/>
