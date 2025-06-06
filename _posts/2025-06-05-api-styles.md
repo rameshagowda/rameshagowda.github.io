@@ -15,17 +15,18 @@ These API styles sample endpoints can be tested by importing into Postman Collec
 
 ### How to make SOAP request using Postman?
 
-    1. Use this SOAP endpoint to test - https://www.w3schools.com/xml/tempconvert.asmx
-    2. Select POST from the request method dropdown list.
-    3. In "Headers" tab,
-      - Add Content-Type to "application/soap+xml; charset=utf-8"
-      - SOAPAction to "#POST"
-    3. In the Body tab, select raw and choose XML from the dropdown list.This is how sample request and response looks like for a SOAP endpoint.
-    ![Desktop View](/assets/img/apis/soap.png)
+1. Use this SOAP endpoint to test - https://www.w3schools.com/xml/tempconvert.asmx
+2. Select POST from the request method dropdown list.
+3. In "Headers" tab,
+  - Add Content-Type to "application/soap+xml; charset=utf-8"
+  - SOAPAction to "#POST"
+4. In the Body tab, select raw and choose XML from the dropdown list.This is how sample request and response looks like for a SOAP endpoint.
+  ![Desktop View](/assets/img/apis/soap.png)
 
 #### References
 
-    - <https://learning.postman.com/docs/sending-requests/soap/making-soap-requests/>
+  <https://learning.postman.com/docs/sending-requests/soap/making-soap-requests/>
+  <https://blog.postman.com/making-http-soap-requests-with-postman/>
 
 ## 2. REST
 
