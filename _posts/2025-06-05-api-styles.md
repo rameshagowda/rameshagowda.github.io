@@ -9,34 +9,37 @@ author: gowda
 ## Introduction
 
 APIs are the backbone of modern software design and integration, enabling seamless communication between disparate systems. SOAP and REST have long dominated the enterprise for their structured and accessible approaches. Modern alternatives like GraphQL, gRPC, WebSocket, and Webhooks offer greater flexibility, enhanced performance, and real-time capabilities. Each architectural style brings unique strengths, allowing software architects and engineers to choose the best fit for specific use cases and operational demands.
+
 These API styles sample endpoints can be tested by importing into Postman Collections. <https://github.com/rameshagowda/api-styles>
 
 ## 1. SOAP
+
+SOAP is an XML-based protocol with a robust, standardized contract defined via WSDL, which ensures secure and reliable communication in enterprise environments. It is ideal for systems that require strict message formatting, built-in error handling, and formal transaction support.
+
+ASMX (in the example) refers to the file extension used for legacy SOAP-based web services in Microsoft's ASP.NET framework. These ".asmx" files serve as endpoints that automatically handle SOAP messaging—packaging, transmitting, and receiving XML messages according to the SOAP protocol.
 
 ### How to make SOAP request using Postman?
 
 1. Use this SOAP endpoint to test - https://www.w3schools.com/xml/tempconvert.asmx
 2. Select POST from the request method dropdown list.
 3. In "Headers" tab,
-  - Add Content-Type to "application/soap+xml; charset=utf-8"
-  - SOAPAction to "#POST"
+
+- Add Content-Type to "application/soap+xml; charset=utf-8"
+- SOAPAction to "#POST"
+
 4. In the Body tab, select raw and choose XML from the dropdown list.This is how sample request and response looks like for a SOAP endpoint.
-  ![Desktop View](/assets/img/apis/soap.png)
+   ![Desktop View](/assets/img/apis/soap.png)
 
 #### References
 
-  <https://learning.postman.com/docs/sending-requests/soap/making-soap-requests/>
-  <https://blog.postman.com/making-http-soap-requests-with-postman/>
+<https://learning.postman.com/docs/sending-requests/soap/making-soap-requests/>
+<https://blog.postman.com/making-http-soap-requests-with-postman/>
 
 ## 2. REST
 
-### Pros
+REST uses standard HTTP methods to manipulate resources, typically exchanging data in JSON or XML. Its stateless, lightweight nature makes it highly scalable and easy to integrate with web and mobile applications.
 
-### Cons
-
-### Use cases
-
-### References
+#### References
 
 ## 3. GraphQL
 
