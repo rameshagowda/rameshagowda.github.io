@@ -9,16 +9,23 @@ author: gowda
 ## Introduction
 
 APIs are the backbone of modern software design and integration, enabling seamless communication between disparate systems. SOAP and REST have long dominated the enterprise for their structured and accessible approaches. Modern alternatives like GraphQL, gRPC, WebSocket, and Webhooks offer greater flexibility, enhanced performance, and real-time capabilities. Each architectural style brings unique strengths, allowing software architects and engineers to choose the best fit for specific use cases and operational demands.
+These API styles sample endpoints can be tested by importing into Postman Collections. <https://github.com/rameshagowda/api-styles>
 
 ## 1. SOAP
 
-### Pros
+### How to make SOAP request using Postman?
 
-### Cons
+    1. Use this SOAP endpoint to test - https://www.w3schools.com/xml/tempconvert.asmx
+    2. Select POST from the request method dropdown list.
+    3. In "Headers" tab,
+      - Add Content-Type to "application/soap+xml; charset=utf-8"
+      - SOAPAction to "#POST"
+    3. In the Body tab, select raw and choose XML from the dropdown list.This is how sample request and response looks like for a SOAP endpoint.
+    ![Desktop View](/assets/img/apis/soap.png)
 
-### Use cases
+#### References
 
-### References
+    - <https://learning.postman.com/docs/sending-requests/soap/making-soap-requests/>
 
 ## 2. REST
 
