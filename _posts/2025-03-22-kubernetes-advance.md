@@ -1,8 +1,8 @@
 ---
 title: Kubernetes Ingress routing with TLS and network polices on KinD cluster
 date: 2025-03-22 12:00 -500
-categories: [Kubernetes, Cilium, CNI, Ingress, TLS]
-tags: [cni, ingress, routing, networkpolicies]
+categories: [Kubernetes, Cilium, CNI, Ingress]
+tags: [cni, ingress, routing, networkpolicies, TLS]
 author: gowda
 ---
 

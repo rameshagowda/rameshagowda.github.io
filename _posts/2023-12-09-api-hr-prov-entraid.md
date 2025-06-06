@@ -1,7 +1,7 @@
 ---
 title: API-driven HR Provisioning with Azure EntraID
 date: 2023-12-08 12:00 -500
-categories: [Architecture,Azure,API,EntraID,HR]
+categories: [Architecture, Azure, API, EntraID]
 tags: [api, entraid, azure, hr]
 author: gowda
 ---

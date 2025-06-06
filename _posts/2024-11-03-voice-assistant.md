@@ -1,8 +1,8 @@
 ---
 title: Speech Assistant with OpenAI real-time API and Twilio phone
 date: 2024-11-03 12:00 -500
-categories: [Architecture, LLM, GenAI, WebSockets, RealTime, Voice, Audio]
-tags: [GenAI, LLM, OpenAI, Voice, Audio]
+categories: [Architecture, LLM, GenAI, API]
+tags: [GenAI, LLM, OpenAI, Voice, Audio, api, RealTime, WebSockets]
 author: gowda
 ---
 

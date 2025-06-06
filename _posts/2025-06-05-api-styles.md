@@ -1,7 +1,7 @@
 ---
 title: API Architectural Styles - SOAP, REST, GraphQL, gRPC, WebSocket and Webhooks
 date: 2025-06-05 12:00 -500
-categories: [API, Architecture, Automation]
+categories: [API, Architecture, Automation, Testing]
 tags: [api, testing, postman]
 author: gowda
 ---

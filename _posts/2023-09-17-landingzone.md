@@ -1,7 +1,7 @@
 ---
 title: Deploying Azure Landing zones
 date: 2023-09-17 12:00 -500
-categories: [Architecture,Azure,Landingzone]
+categories: [Architecture, Azure, Landingzone]
 tags: [landing-zone, azure]
 author: gowda
 ---
