@@ -87,11 +87,11 @@ REST uses standard HTTP methods to manipulate resources, typically exchanging da
 
 ## API styles in one image
 
-    ![Desktop View](/assets/img/apis/compare.png)
+![Desktop View](/assets/img/apis/compare.png)
 
 ## API Protocols
 
-    ![Desktop View](/assets/img/apis/protocols.png)
+![Desktop View](/assets/img/apis/protocols.png)
 
 ## API test automation strategy
 
