@@ -2,7 +2,7 @@
 title: API Architectural Styles - SOAP, REST, GraphQL, gRPC, WebSocket and Webhooks
 date: 2025-06-05 12:00 -500
 categories: [API, Architecture]
-tags: [api]
+tags: [api, testing]
 author: gowda
 ---
 
@@ -34,6 +34,6 @@ author: gowda
 
 ### References for API tests using Postman
 
-    <https://www.youtube.com/watch?v=oXW-C2bM0wE>
-    <https://www.postman.com/postman/test-examples-in-postman/documentation/zuy6un3/intro-to-writing-tests-with-examples>
-    <https://community.postman.com/categories>
+- <https://www.youtube.com/watch?v=oXW-C2bM0wE>
+- <https://www.postman.com/postman/test-examples-in-postman/documentation/zuy6un3/intro-to-writing-tests-with-examples>
+- <https://community.postman.com/categories>
