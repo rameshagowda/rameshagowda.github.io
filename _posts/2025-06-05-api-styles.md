@@ -8,7 +8,7 @@ author: gowda
 
 ## Introduction
 
-APIs are the backbone of modern software integration, enabling seamless communication between disparate systems. SOAP and REST have long dominated the enterprise for their structured and accessible approaches. Modern alternatives like GraphQL, gRPC, WebSocket, and Webhooks offer greater flexibility, enhanced performance, and real-time capabilities. Each architectural style brings unique strengths, allowing developers to choose the best fit for specific use cases and operational demands.
+APIs are the backbone of modern software design and integration, enabling seamless communication between disparate systems. SOAP and REST have long dominated the enterprise for their structured and accessible approaches. Modern alternatives like GraphQL, gRPC, WebSocket, and Webhooks offer greater flexibility, enhanced performance, and real-time capabilities. Each architectural style brings unique strengths, allowing software architects and engineers to choose the best fit for specific use cases and operational demands.
 
 ## 1. SOAP
 
