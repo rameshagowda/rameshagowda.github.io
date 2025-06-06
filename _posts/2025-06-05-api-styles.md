@@ -24,7 +24,7 @@ author: gowda
 
 - Unit Test
 - Integration Test
-  - Contract test / Schema validation
+  - Contract test and Schema validation
   - Using Mocks
   - Using variables to exchange info between API calls
 - End to end API test
