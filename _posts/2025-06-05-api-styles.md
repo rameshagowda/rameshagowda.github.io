@@ -39,7 +39,20 @@ ASMX (in the example) refers to the file extension used for legacy SOAP-based we
 
 REST uses standard HTTP methods to manipulate resources, typically exchanging data in JSON or XML. Its stateless, lightweight nature makes it highly scalable and easy to integrate with web and mobile applications.
 
-#### References
+- GET example
+  URL: https://jsonplaceholder.typicode.com/posts
+  Method: GET
+  Returns: A list of sample posts in JSON format.
+
+- POST example
+  URL: https://jsonplaceholder.typicode.com/posts
+  Method: POST
+  Headers: Content-Type: application/json
+  Body (raw JSON): {
+  "title": "New Post Title",
+  "body": "This is the content of the post.",
+  "userId": 1
+  }
 
 ## 3. GraphQL
 
