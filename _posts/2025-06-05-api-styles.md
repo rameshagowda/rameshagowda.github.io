@@ -62,6 +62,21 @@ REST uses standard HTTP methods to manipulate resources, typically exchanging da
               "userId": 1
               }
 
+```bash
+curl --location 'https://jsonplaceholder.typicode.com/posts'
+```
+
+```bash
+curl --location 'https://jsonplaceholder.typicode.com/posts' \
+--header 'Content-Type: application/json' \
+--data '{
+  "title": "YET ANOTHER Post Title",
+  "body": "This is the content of the post.",
+  "userId": 1
+}
+'
+```
+
 ## 3. GraphQL
 
 ### Pros
