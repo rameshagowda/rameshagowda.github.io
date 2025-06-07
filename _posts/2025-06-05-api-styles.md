@@ -63,57 +63,35 @@ REST uses standard HTTP methods to manipulate resources, typically exchanging da
               }
 
 ```bash
-curl --location 'https://jsonplaceholder.typicode.com/posts'
+    curl --location 'https://jsonplaceholder.typicode.com/posts'
 ```
 
 ```bash
-curl --location 'https://jsonplaceholder.typicode.com/posts' \
---header 'Content-Type: application/json' \
---data '{
-  "title": "YET ANOTHER Post Title",
-  "body": "This is the content of the post.",
-  "userId": 1
-}
-'
+    curl --location 'https://jsonplaceholder.typicode.com/posts' \
+    --header 'Content-Type: application/json' \
+    --data '{
+      "title": "YET ANOTHER Post Title",
+      "body": "This is the content of the post.",
+      "userId": 1
+    }
+    '
 ```
 
 ## 3. GraphQL
 
-### Pros
-
-### Cons
-
-### Use cases
+GraphQL offers API developers a streamlined alternative by providing a single endpoint for all data queries from diverse endpoints and mutations (CRUD). It lets clients specify exactly which fields they need, eliminating over-fetching and under-fetching inherent in traditional REST designs. With its strongly typed schema and flexible query language, GraphQL enables more efficient, self-documenting, and evolvable APIs.
 
 ### References
 
-## 4. RPC
-
-### Pros
-
-### Cons
-
-### Use cases
+## 4. gRPC
 
 ### References
 
 ## 5. WebSocket
 
-### Pros
-
-### Cons
-
-### Use cases
-
 ### References
 
 ## 6. Webhooks
-
-### Pros
-
-### Cons
-
-### Use cases
 
 ### References
 
