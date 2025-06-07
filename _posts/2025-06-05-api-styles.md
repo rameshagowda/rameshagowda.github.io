@@ -12,6 +12,8 @@ APIs are the backbone of modern software design and integration, enabling seamle
 
 These API styles sample endpoints can be tested by importing into Postman Collections. <https://github.com/rameshagowda/api-styles>
 
+API Test strategy is important to consider for automation which is provided in the end.
+
 ## 1. SOAP
 
 SOAP is an XML-based protocol with a robust, standardized contract defined via WSDL, which ensures secure and reliable communication in enterprise environments. It is ideal for systems that require strict message formatting, built-in error handling, and formal transaction support.
