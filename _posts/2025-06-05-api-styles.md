@@ -81,9 +81,22 @@ REST uses standard HTTP methods to manipulate resources, typically exchanging da
 
 ## 3. GraphQL
 
-GraphQL offers API developers a streamlined alternative by providing a single endpoint for all data queries from diverse endpoints and mutations (CRUD). It lets clients specify exactly which fields they need, eliminating over-fetching and under-fetching inherent in traditional REST designs. With its strongly typed schema and flexible query language, GraphQL enables more efficient, self-documenting, and evolvable APIs.
+Unlike REST, which uses multiple endpoints to access different data sets, GraphQL streamlines querying by accessing all data through a single endpoint. It lets clients specify exactly which fields they need, eliminating over-fetching and under-fetching inherent in traditional REST designs. With its strongly typed schema and flexible query language, GraphQL enables more efficient, self-documenting, and evolvable APIs.
+
+GraphQL requests can perform three types of operations:
+
+      - Query - Retrieves data from the server. Queries specify the required data fields and can include arguments for more precise data retrieval.
+
+      - Mutation - Manipulates data on the server, including creating, updating, or deleting records. Mutations specify the fields to be returned after the operation and use arguments to detail the manipulation.
+
+      - Subscription - Gets real-time data updates from the server. Subscriptions enable clients to listen to specific data fields and receive updates automatically over a persistent connection.
+
+
+![Desktop View](/assets/img/apis/soap.png)
 
 ### References
+
+- <https://learning.postman.com/docs/sending-requests/graphql/graphql-overview/>
 
 ## 4. gRPC
 
