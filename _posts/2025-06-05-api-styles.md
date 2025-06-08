@@ -91,11 +91,13 @@ GraphQL requests can perform three types of operations:
 
       - Subscription - Gets real-time data updates from the server. Subscriptions enable clients to listen to specific data fields and receive updates automatically over a persistent connection.
 
-
-![Desktop View](/assets/img/apis/soap.png)
+![Desktop View](/assets/img/apis/graphQL.png)
 
 ### References
 
+- <https://graphql.org/learn/>
+- <https://rickandmortyapi.com/documentation>
+- <https://www.youtube.com/watch?v=xMCnDesBggM&list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y&index=1>
 - <https://learning.postman.com/docs/sending-requests/graphql/graphql-overview/>
 
 ## 4. gRPC
