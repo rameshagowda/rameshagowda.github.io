@@ -112,7 +112,7 @@ After an initial HTTP upgrade, they use a dedicated protocol over TCP, reducing 
 
 They are widely used for chat, gaming, live updates, and other scenarios where continuous, rapid data transmission is essential.
 
-Socket.io in NodeJS and SignalR MS DotNet leverage WebSockets for realtime, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
+Socket.io (NodeJS) and SignalR (MS DotNet) leverage WebSockets for realtime, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
 
 ### References
 
@@ -138,15 +138,13 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
 ## Mix API styles in the same Product?
 
-Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
+      Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
 
 ## API styles in one image
 
 ![Desktop View](/assets/img/apis/compare.png)
 
 ## API Protocols
-
-![Desktop View](/assets/img/apis/protocols.png)
 
 ## API test automation strategy
 
