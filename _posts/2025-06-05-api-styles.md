@@ -146,6 +146,46 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
 ## API Protocols
 
+### Streaming Protocols
+
+      - WebSocket
+
+        Purpose: Enables full duplex, bidirectional streaming communication.
+
+        Underlying Protocol: Initiated via an HTTP handshake, then it upgrades to a persistent TCP connection.
+
+      - Server Sent Events (SSE)
+
+        Purpose: Provides a unidirectional, continuous stream of events from server to client.
+
+        Underlying Protocol: Uses a single long‑lived HTTP GET request with the text/event-stream MIME type.
+
+      - gRPC (Streaming Calls)
+
+        Purpose: Supports long lived RPC streams including server, client, and bidirectional streaming methods.
+
+        Underlying Protocol: Built on HTTP2 with Protocol Buffers for serialization.
+
+      - WebRTC
+
+        Purpose: Facilitates realtime, peer to peer streaming of media (audio, video) and data.
+
+        Underlying Protocol: Uses UDP
+
+      - GraphQL Subscriptions
+
+        Purpose: Allows clients to subscribe to real‑time updates of the data they query.
+
+        Underlying Protocol: Typically implemented over WebSockets (or sometimes SSE), inheriting its streaming qualities.
+
+      - Messaging Protocols (e.g., AMQP, MQTT)
+
+        Purpose: Provide continuous, event driven messaging often in a publish subscribe model suitable for IoT and distributed systems.
+
+        Underlying Protocol: Primarily based on TCP (and can be tunneled over WebSockets in certain setups).
+
+### Request Response based (Nonstreaming) protocols
+
 ## API test automation strategy
 
 - Unit Test
