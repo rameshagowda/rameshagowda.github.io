@@ -106,17 +106,17 @@ GraphQL requests can perform three types of operations:
 
 ## 5. WebSocket
 
-- WebSockets establish a persistent connection between client and server, enabling real-time, bi-directional data exchange without repeated HTTP handshakes.
+WebSockets establish a persistent connection between client and server, enabling realtime, bi-directional data exchange without repeated HTTP handshakes.
 
-- After an initial HTTP upgrade, they use a dedicated protocol over TCP, reducing overhead and latency for interactive applications.
+After an initial HTTP upgrade, they use a dedicated protocol over TCP, reducing overhead and latency for interactive applications.
 
-- They are widely used for chat, gaming, live updates, and other scenarios where continuous, rapid data transmission is essential.
+They are widely used for chat, gaming, live updates, and other scenarios where continuous, rapid data transmission is essential.
 
-- Socket.io (in NodeJS) and SignalR (MS .Net) leverage WebSockets for real-time, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
+Socket.io in NodeJS and SignalR MS DotNet leverage WebSockets for realtime, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
 
 ### References
 
-Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhooks.
+Difference between Http Polling, SSE (Server Sent Events), WebSockets and Webhooks.
 
 - <https://www.youtube.com/watch?v=JQoPuXAf92U>
 - <https://www.youtube.com/watch?v=6RvlKYgRFYQ>
