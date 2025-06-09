@@ -106,15 +106,39 @@ GraphQL requests can perform three types of operations:
 
 ## 5. WebSocket
 
+- WebSockets establish a persistent connection between client and server, enabling real-time, bi-directional data exchange without repeated HTTP handshakes.
+
+- After an initial HTTP upgrade, they use a dedicated protocol over TCP, reducing overhead and latency for interactive applications.
+
+- They are widely used for chat, gaming, live updates, and other scenarios where continuous, rapid data transmission is essential.
+
+- Socket.io (in NodeJS) and SignalR (MS .Net) leverage WebSockets for real-time, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
+
 ### References
+
+Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhooks.
+
+- <https://www.youtube.com/watch?v=JQoPuXAf92U>
+- <https://www.youtube.com/watch?v=6RvlKYgRFYQ>
+
+WebSockets design and testing
+
+- <https://www.youtube.com/watch?v=X_DdIXrmWOo>
+- <https://www.youtube.com/watch?v=ImzYxO3Lsvc>
+- <https://www.youtube.com/watch?v=aSPHr6dbMmo>
 
 ## 6. Webhooks
 
 ### References
 
-- Can we mix these APIs in the same Product?
+Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhooks.
 
-  Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
+- <https://www.youtube.com/watch?v=JQoPuXAf92U>
+- <https://www.youtube.com/watch?v=6RvlKYgRFYQ>
+
+## Mix API styles in the same Product?
+
+Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
 
 ## API styles in one image
 
