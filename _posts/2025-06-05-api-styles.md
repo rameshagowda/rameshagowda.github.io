@@ -91,6 +91,10 @@ GraphQL requests can perform three types of operations:
 
       - Subscription - Gets real-time data updates from the server. Subscriptions enable clients to listen to specific data fields and receive updates automatically over a persistent connection.
 
+- GraphQL Queries and Mutations use Http POST mainly because POST avoids URL length limitations and better accommodates complex queries and payloads.
+
+- Subscriptions are designed for real time updates and typically run over a persistent connection using WebSockets.
+
 ![Desktop View](/assets/img/apis/graphQL.png)
 
 ### References
@@ -185,6 +189,36 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
         Underlying Protocol: Primarily based on TCP (and can be tunneled over WebSockets in certain setups).
 
 ### Request Response based (Nonstreaming) protocols
+
+      - REST
+
+        Purpose: Uses HTTP methods to perform operations on resources in a stateless fashion.
+
+        Underlying Protocol: HTTP with payloads typically in JSON or XML.
+
+      - SOAP
+
+        Purpose: An XML‑based protocol emphasizing formal operations, transactions, and standardized error handling.
+
+        Underlying Protocol: Commonly over HTTP, though it can also run over SMTP or raw TCP in some configurations.
+
+      - GraphQL (Queries/Mutations)
+
+        Purpose: Allows clients to request exactly the data they need in a single endpoint interaction.
+
+        Underlying Protocol: Generally uses HTTP POST requests (JSON payloads), performing discrete queries or mutations.
+
+      - gRPC (Unary Calls)
+
+        Purpose: Executes standard procedure calls in a request‑response format without maintaining a persistent streaming channel.
+
+        Underlying Protocol: Operates over HTTP/2 with Protocol Buffers for efficient encoding.
+
+      - Webhooks
+
+        Purpose: Implements an event-notification model where the server makes an HTTP POST call to a pre‑configured client endpoint when an event occurs.
+
+        Underlying Protocol: Pure HTTP callbacks without a continuous connection.
 
 ## API test automation strategy
 
