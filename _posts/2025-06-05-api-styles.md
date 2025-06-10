@@ -142,6 +142,23 @@ WebSockets design and testing
 
 ## 6. Webhooks
 
+A webhook API is an event-driven mechanism where one application automatically sends real-time data to another application when a specific event occurs. Instead of waiting for a client to poll an API for new information, the server "pushes" the data immediately to a predetermined URL endpoint via an HTTP POST request, thereby reducing overhead and ensuring timely updates.
+
+Examples:
+
+1. Sending Notifications / Alerts on Teams or Salck when a CPU utilization reaches 80% in production systems.
+2. Automatically notifying an inventory system when a new order is placed.
+
+How Webhooks work?
+
+      - Event Occurrence: System A experiences or detects an event.
+
+      - Subscription: System B (the recipient) registers its interest in that event by providing a target URL (its webhook endpoint) to System A.
+
+      - Notification: When the event happens, System A sends an HTTP POST request containing the event data to the registered URL hosted by System B.
+
+      - Processing: System B receives the payload and processes the data according to its logic (ex, updating its records or triggering specific workflows).
+
 ### References
 
 Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhooks.
@@ -169,7 +186,7 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
       - Server Sent Events (SSE)
 
-        Purpose: Provides a unidirectional, continuous stream of events from server to client.
+        Purpose: Provides a unidirectional, continuous stream of events from server to client. Response from ChatGPT in chunks is an example of SSE.
 
         Underlying Protocol: Uses a single long‑lived HTTP GET request with the text/event-stream MIME type.
 
