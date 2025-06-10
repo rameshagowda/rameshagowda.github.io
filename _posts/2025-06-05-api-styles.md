@@ -118,6 +118,14 @@ They are widely used for chat, gaming, live updates, and other scenarios where c
 
 Socket.io (NodeJS) and SignalR (MS DotNet) leverage WebSockets for realtime, reliable and low latency communications. They can fallback to other transport protocols like SSE (Server Sent events) or long polling if websocket connection is not supported by client or network environment.
 
+1. Get the WS server endpoint. for ex, wss://ws.postman-echo.com/raw
+2. In postman, Create New --> WebSocket request --> Use the WSS endpoint
+3. Connect to WSS. You will see the status "Connected"
+4. Send the json request
+5. You will see the streaming response.
+
+![Desktop View](/assets/img/apis/ws.png)
+
 ### References
 
 Difference between Http Polling, SSE (Server Sent Events), WebSockets and Webhooks.
@@ -130,6 +138,7 @@ WebSockets design and testing
 - <https://www.youtube.com/watch?v=X_DdIXrmWOo>
 - <https://www.youtube.com/watch?v=ImzYxO3Lsvc>
 - <https://www.youtube.com/watch?v=aSPHr6dbMmo>
+- <https://learning.postman.com/docs/sending-requests/websocket/create-a-websocket-request/>
 
 ## 6. Webhooks
 
