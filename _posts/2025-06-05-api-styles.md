@@ -115,7 +115,22 @@ gRPC is fundamentaly a contract-first design, meaning you always start with a "c
 Here are the important concepts in gRPC.
 
 1. Contract-First Design: gRPC starts with a contract defined by a Protocol Buffers (.proto) file. This file specifies the service, the available RPC methods, and the structure of the request and response messages. This contract-first approach ensures both the server and client adhere to a consistent API specification.
-   - Think of Service definitions and messages like Interfces and DTOs in DotNet.
+
+   - Think of Service definitions and messages like Interfaces and DTOs in DotNet.
+
+2. Transport Over HTTP/2: This means TLS only and supports multiplexing, header compression and full duplex communication.
+
+3. Efficient Serialization with Protocol Buffers: Protocol Buffers (protobuf) provide a compact binary serialization mechanism. Compared to text-based formats like JSON, protobufs result in smaller payloads and faster serialization/deserialization (encoding/decoding), making data transfer more efficient.
+
+4. Flexible RPC Communication Patterns:
+
+   - Unary RPC: A single request followed by a single response.
+
+   - Server Streaming RPC: The client sends a request and receives a stream of responses.
+
+   - Client Streaming RPC: The client sends a stream of requests and gets back one response.
+
+   - Bidirectional Streaming RPC: Both client and server send streams of messages concurrently, ideal for real-time communications.
 
 ### References
 
