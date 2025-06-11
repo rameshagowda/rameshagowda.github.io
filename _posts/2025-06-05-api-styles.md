@@ -110,6 +110,8 @@ GraphQL requests can perform three types of operations:
 
 ## 4. gRPC
 
+gRPC is fundamentaly a contract-first system, meaning you always start with a "contract", typically defined in a ".proto" file.
+
 ### References
 
 - <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
