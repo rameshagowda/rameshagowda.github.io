@@ -132,6 +132,10 @@ Here are the important concepts in gRPC.
 
    - Bidirectional Streaming RPC: Both client and server send streams of messages concurrently, ideal for real-time communications.
 
+### Architecture of gRPC
+
+![Desktop View](/assets/img/apis/grpc.png)
+
 ### References
 
 - <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
