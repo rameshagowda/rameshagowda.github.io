@@ -148,8 +148,19 @@ Here are the important concepts in gRPC.
    - Stub leverages the channel to connect to server and invoke RPC methods.
 5. Run and Test the Application
 
+### Protocol Buffers vs JSON
+
+#### JSON
+
+![Desktop View](/assets/img/apis/json.png)
+
+#### ProtoBuf
+
+![Desktop View](/assets/img/apis/protobuf.png)
+
 ### References
 
+- <https://grpc.io/docs/what-is-grpc/core-concepts/>
 - <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
 
 ## 5. WebSocket
