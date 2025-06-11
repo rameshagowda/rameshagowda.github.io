@@ -176,7 +176,7 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
       Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC.
 
-- <https://github.com/DanielSCrouch/grpc-rest-openapi>
+      - <https://github.com/DanielSCrouch/grpc-rest-openapi>
 
 ## API styles in one image
 
