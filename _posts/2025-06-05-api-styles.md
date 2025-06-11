@@ -110,7 +110,12 @@ GraphQL requests can perform three types of operations:
 
 ## 4. gRPC
 
-gRPC is fundamentaly a contract-first system, meaning you always start with a "contract", typically defined in a ".proto" file.
+gRPC is fundamentaly a contract-first design, meaning you always start with a "contract", typically defined in a ".proto" file that specifies your service interface and the message types exchanged between the client and the server.
+
+Here are the important concepts in gRPC.
+
+1. Contract-First Design: gRPC starts with a contract defined by a Protocol Buffers (.proto) file. This file specifies the service, the available RPC methods, and the structure of the request and response messages. This contract-first approach ensures both the server and client adhere to a consistent API specification.
+   - Think of Service definitions and messages like Interfces and DTOs in C#.
 
 ### References
 
