@@ -79,6 +79,10 @@ REST uses standard HTTP methods to manipulate resources, typically exchanging da
     '
 ```
 
+### References
+
+- <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/apis?view=aspnetcore-7.0>
+
 ## 3. GraphQL
 
 Unlike REST, which uses multiple endpoints to access different data sets, GraphQL streamlines querying by accessing all data through a single endpoint. It lets clients specify exactly which fields they need, eliminating over-fetching and under-fetching inherent in traditional REST designs. With its strongly typed schema and flexible query language, GraphQL enables more efficient, self-documenting, and evolvable APIs.
@@ -107,6 +111,8 @@ GraphQL requests can perform three types of operations:
 ## 4. gRPC
 
 ### References
+
+- <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
 
 ## 5. WebSocket
 
@@ -168,7 +174,9 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
 ## Mix API styles in the same Product?
 
-      Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC
+      Yes, of course, we can use all of them together to execute an API strategy. Each API styles are best suited for certain use cases. For example, REST APIs are user friednly and can be used to expose to external users. gRPC is best suited for internal client server use cases like in microservices. So we can provide REST endpoints to external users, but internal transactions, calculations, communications can be handled with gRPC.
+
+      - <https://github.com/DanielSCrouch/grpc-rest-openapi>
 
 ## API styles in one image
 
