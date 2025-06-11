@@ -136,6 +136,16 @@ Here are the important concepts in gRPC.
 
 ![Desktop View](/assets/img/apis/grpc.png)
 
+### Design Process for gRPC implementation
+
+1. Define the Service Contract Using a Proto File
+   - Defines the Service, methods and messages (data contract/DTOs)
+2. Generate Code from the Proto File
+   - Use Protocol Buffers compiler (protoc) to generate the client code (Stubs) and server side abstract base class code (Skeleton).
+3. Implement the Server
+4. Implement the Client
+5. Run and Test the Application
+
 ### References
 
 - <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
