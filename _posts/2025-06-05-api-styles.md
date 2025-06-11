@@ -162,6 +162,7 @@ Here are the important concepts in gRPC.
 
 - <https://grpc.io/docs/what-is-grpc/core-concepts/>
 - <https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0>
+- <https://learning.postman.com/docs/sending-requests/grpc/grpc-client-overview/>
 
 ## 5. WebSocket
 
