@@ -142,9 +142,9 @@ Here are the important concepts in gRPC.
    - Defines the Service, methods and messages (data contract/DTOs)
 2. Generate Code from the Proto File
    - Use Protocol Buffers compiler (protoc) to generate the client code (Stubs) and server side abstract base class code (Skeleton).
-3. Implement the Server (base class skeleton)
+3. Implement the Server - base class skeleton
    - Extend the generated base class to implement the contracts that provide required functionality and run the gRPC server.
-4. Implement the Client (Stub)
+4. Implement the Client - Stub
    - Stub leverages the channel to connect to server and invoke RPC methods.
 5. Run and Test the Application
 
