@@ -238,7 +238,7 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
       - WebSocket
 
-        Purpose: Enables full duplex, bidirectional streaming communication.
+        Purpose: Enables full duplex, bidirectional streaming communication. Ideal for server to server applications like one api service talking to another api service to send and receive data.
 
         Underlying Protocol: Initiated via an HTTP handshake, then it upgrades to a persistent TCP connection.
 
@@ -256,7 +256,7 @@ Difference between Http Polling, SSE (Server-Sent Events), WebSockets and Webhoo
 
       - WebRTC
 
-        Purpose: Facilitates realtime, peer to peer streaming of media (audio, video) and data.
+        Purpose: Facilitates realtime, peer to peer streaming of media (audio, video) and data. Ideal for client-side, or browser based applications like in voice chat conversation.
 
         Underlying Protocol: Uses UDP
 
